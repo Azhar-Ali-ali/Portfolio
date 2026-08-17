@@ -153,7 +153,7 @@
                 <a href="#projects" class="w-full sm:w-auto px-8 py-4 bg-white text-black font-semibold rounded hover:bg-gray-200 transition-colors duration-300">
                     <i class="fas fa-briefcase mr-2"></i> View Projects
                 </a>
-                <a href="#" class="w-full sm:w-auto px-8 py-4 bg-transparent border border-white/30 text-white font-semibold rounded hover:bg-white/10 transition-colors duration-300">
+                <a href="https://github.com/Azhar-Ali-ali/Portfolio/blob/main/Azhar_Ali_Full_Stack_Developer.pdf?raw=1" download class="w-full sm:w-auto px-8 py-4 bg-transparent border border-white/30 text-white font-semibold rounded hover:bg-white/10 transition-colors duration-300">
                     <i class="fas fa-file-pdf mr-2"></i> Download Resume
                 </a>
                 <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-transparent text-gray-300 hover:text-white font-medium transition-colors duration-300 flex items-center justify-center">
@@ -1011,25 +1011,25 @@
         const mobileMenu = document.getElementById('mobile-menu');
 
         if (mobileMenuBtn && mobileMenu) {
+            const updateMobileMenuIcon = (isOpen) => {
+                const icon = mobileMenuBtn.querySelector('i');
+                if (!icon) return;
+
+                icon.classList.toggle('fa-bars', !isOpen);
+                icon.classList.toggle('fa-xmark', isOpen);
+                mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+            };
+
             mobileMenuBtn.addEventListener('click', () => {
                 const isHidden = mobileMenu.classList.contains('hidden');
                 mobileMenu.classList.toggle('hidden');
-
-                const icon = mobileMenuBtn.querySelector('i');
-                if (icon) {
-                    icon.classList.toggle('fa-bars', !isHidden);
-                    icon.classList.toggle('fa-xmark', isHidden);
-                }
+                updateMobileMenuIcon(isHidden);
             });
 
             mobileMenu.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                     mobileMenu.classList.add('hidden');
-                    const icon = mobileMenuBtn.querySelector('i');
-                    if (icon) {
-                        icon.classList.add('fa-bars');
-                        icon.classList.remove('fa-xmark');
-                    }
+                    updateMobileMenuIcon(false);
                 });
             });
         }
@@ -1040,18 +1040,15 @@
         const btnRight = document.getElementById('scroll-right');
 
         if(track && btnLeft && btnRight) {
-            // Calculate scroll amount based on visible cards
             const getScrollAmount = () => {
                 const card = track.querySelector('div');
                 if(card) {
-                    // Scroll by the width of one card plus the gap (approx 24px/1.5rem)
                     return card.offsetWidth + 24;
                 }
-                return 300; // Fallback
+                return 300;
             };
 
             const updateButtonStates = () => {
-                // Hide left button if at start
                 if (track.scrollLeft <= 0) {
                     btnLeft.classList.add('opacity-0', 'pointer-events-none');
                     btnLeft.classList.remove('opacity-100', 'pointer-events-auto');
@@ -1060,8 +1057,6 @@
                     btnLeft.classList.add('opacity-100', 'pointer-events-auto');
                 }
 
-                // Hide right button if at end
-                // Use a small threshold (e.g., 2px) for rounding errors across different zoom levels/browsers
                 if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 2) {
                     btnRight.classList.add('opacity-0', 'pointer-events-none');
                     btnRight.classList.remove('opacity-100', 'pointer-events-auto');
@@ -1085,18 +1080,8 @@
                 });
             });
 
-            btnRight.addEventListener('click', () => {
-                track.scrollBy({
-                    left: scrollAmount,
-                    behavior: 'smooth'
-                });
-            });
-
-            // Update button states on scroll and window resize
             track.addEventListener('scroll', updateButtonStates);
             window.addEventListener('resize', updateButtonStates);
-            
-            // Initial check
             setTimeout(updateButtonStates, 100);
         }
 

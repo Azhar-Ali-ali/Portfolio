@@ -519,6 +519,27 @@
                         </div>
                     </div>
 
+                    <!-- Project 9: Blockchain Order Verification -->
+                    <div class="w-[220px] sm:w-[240px] flex-shrink-0 snap-start bg-brand-black border border-white/10 rounded-lg overflow-hidden group/card flex flex-col h-full transform transition-transform hover:-translate-y-2 duration-300 project-card fullstack" data-category="fullstack">
+                        <div class="relative overflow-hidden aspect-[16/9]">
+                            <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Blockchain" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110 grayscale group-hover/card:grayscale-0">
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h3 class="text-sm font-bold text-white mb-1 line-clamp-1">LUMINA — Blockchain Order Verification</h3>
+                            <p class="text-gray-400 text-xs mb-3 flex-grow line-clamp-2">
+                                Blockchain-based order audit trail with Solidity smart contracts and Web3 integration.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 mb-3">
+                                <span class="text-[9px] font-semibold text-gray-300 bg-white/5 px-1.5 py-0.5 rounded border border-white/10">Solidity</span>
+                                <span class="text-[9px] font-semibold text-gray-300 bg-white/5 px-1.5 py-0.5 rounded border border-white/10">Hardhat</span>
+                                <span class="text-[9px] font-semibold text-gray-300 bg-white/5 px-1.5 py-0.5 rounded border border-white/10">Viem</span>
+                            </div>
+                            <button onclick="openModal('project9-modal')" class="w-full py-2 text-xs font-semibold text-black bg-white rounded hover:bg-gray-200 transition-colors mt-auto">
+                                View Project
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
 
                 <!-- Right Navigation Button -->
@@ -949,6 +970,503 @@
                 <div class="flex gap-4 mt-6">
                      <a href="https://github.com/Azhar-Ali-ali/carfax-website" target="_blank" class="flex-1 bg-white text-black font-semibold py-3 rounded text-center hover:bg-gray-200 transition-colors text-sm">
                         <i class="fab fa-github mr-2"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9: Blockchain Order Verification -->
+    <div id="project9-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 transition-opacity duration-300 p-4 overflow-y-auto">
+        <div class="bg-brand-dark border border-white/10 rounded-lg w-full max-w-3xl transform scale-95 transition-transform duration-300 my-auto flex flex-col max-h-[95vh]">
+            <div class="relative flex-shrink-0">
+                <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Blockchain" class="w-full h-48 sm:h-64 object-cover rounded-t-lg">
+                <button onclick="closeModal('project9-modal')" class="absolute top-4 right-4 w-8 h-8 bg-black/50 hover:bg-black text-white rounded-full flex items-center justify-center transition-colors border border-white/20 z-10">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-6 sm:p-8 overflow-y-auto custom-scrollbar flex-grow">
+                <h2 class="text-2xl font-bold text-white mb-2">LUMINA — Blockchain Order Verification</h2>
+                <p class="text-gray-400 text-sm mb-4">Blockchain Integration • Smart Contracts • Web3</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="text-xs font-semibold text-gray-300 bg-white/5 px-2 py-1 rounded border border-white/10">Solidity</span>
+                    <span class="text-xs font-semibold text-gray-300 bg-white/5 px-2 py-1 rounded border border-white/10">Hardhat</span>
+                    <span class="text-xs font-semibold text-gray-300 bg-white/5 px-2 py-1 rounded border border-white/10">Hardhat Ignition</span>
+                    <span class="text-xs font-semibold text-gray-300 bg-white/5 px-2 py-1 rounded border border-white/10">Viem</span>
+                    <span class="text-xs font-semibold text-gray-300 bg-white/5 px-2 py-1 rounded border border-white/10">Node.js</span>
+                    <span class="text-xs font-semibold text-gray-300 bg-white/5 px-2 py-1 rounded border border-white/10">PostgreSQL</span>
+                </div>
+                
+                <h3 class="text-white font-semibold mb-2 text-lg">Overview</h3>
+                <p class="text-gray-400 mb-6 text-sm leading-relaxed">
+                    Extended LUMINA, my AI-powered multi-vendor e-commerce platform, with a blockchain-based order audit trail. The system uses a Solidity smart contract to record important order lifecycle events such as <code class="bg-white/10 px-1.5 py-0.5 rounded text-xs">CREATED</code>, <code class="bg-white/10 px-1.5 py-0.5 rounded text-xs">READY_FOR_PICKUP</code>, <code class="bg-white/10 px-1.5 py-0.5 rounded text-xs">OUT_FOR_DELIVERY</code>, and <code class="bg-white/10 px-1.5 py-0.5 rounded text-xs">DELIVERED</code>.
+                </p>
+                <p class="text-gray-400 mb-6 text-sm leading-relaxed">
+                    PostgreSQL remains the primary application database, while blockchain is used selectively to create a tamper-evident record of important order events. This hybrid architecture provides the flexibility of a traditional database with the security guarantees of blockchain.
+                </p>
+
+                <h3 class="text-white font-semibold mb-4 text-lg">What I Built</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                    <div class="bg-white/5 border border-white/10 rounded p-3">
+                        <p class="text-white font-semibold text-sm mb-1">Smart Contract</p>
+                        <p class="text-gray-400 text-xs">Developed <code class="bg-white/10 px-1 rounded">OrderVerification</code> Solidity contract to store order status history and timestamps on-chain.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-3">
+                        <p class="text-white font-semibold text-sm mb-1">Blockchain Network</p>
+                        <p class="text-gray-400 text-xs">Used Hardhat to run a local Ethereum-compatible blockchain for development and testing.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-3">
+                        <p class="text-white font-semibold text-sm mb-1">Contract Deployment</p>
+                        <p class="text-gray-400 text-xs">Used Hardhat Ignition for automated smart contract compilation, deployment, and verification.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-3">
+                        <p class="text-white font-semibold text-sm mb-1">Web3 Integration</p>
+                        <p class="text-gray-400 text-xs">Used Viem to interact with deployed smart contract from Node.js backend using contract ABI.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-3">
+                        <p class="text-white font-semibold text-sm mb-1">Order Audit Trail</p>
+                        <p class="text-gray-400 text-xs">Successfully recorded multiple order lifecycle events on-chain with transaction confirmation.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-3">
+                        <p class="text-white font-semibold text-sm mb-1">Hybrid Architecture</p>
+                        <p class="text-gray-400 text-xs">PostgreSQL handles application data while blockchain provides verification for critical order events.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-white font-semibold mb-3 text-lg">System Architecture</h3>
+                <p class="text-gray-400 text-xs mb-2 italic">Hybrid architecture: PostgreSQL handles application data while blockchain provides a tamper-evident order audit trail.</p>
+                <div class="bg-white/5 border border-white/10 rounded p-4 mb-6 text-center text-gray-400 text-sm">
+                    <p>LUMINA Frontend (React) → Node.js Backend (Express)</p>
+                    <p class="my-2">↓</p>
+                    <p>PostgreSQL (App DB) + Viem (Web3 Layer)</p>
+                    <p class="my-2">↓</p>
+                    <p>OrderVerification.sol Smart Contract</p>
+                    <p class="my-2">↓</p>
+                    <p>Hardhat Local Blockchain (Ethereum-compatible)</p>
+                </div>
+
+                <h3 class="text-white font-semibold mb-2 text-lg">Why Blockchain?</h3>
+                <p class="text-gray-400 mb-6 text-sm leading-relaxed">
+                    Traditional order information is stored in the application's database. For selected critical events, blockchain provides an additional tamper-evident record. This allows LUMINA to verify that a particular order status was recorded at a specific point in time without replacing the existing database architecture. The blockchain serves as a trust layer for important order lifecycle milestones.
+                </p>
+
+                <h3 class="text-white font-semibold mb-3 text-lg">Key Technologies</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-6">
+                    <div class="text-center p-2 bg-white/5 border border-white/10 rounded">
+                        <p class="text-white font-semibold text-xs">Solidity</p>
+                        <p class="text-gray-400 text-xs">Smart Contracts</p>
+                    </div>
+                    <div class="text-center p-2 bg-white/5 border border-white/10 rounded">
+                        <p class="text-white font-semibold text-xs">Hardhat</p>
+                        <p class="text-gray-400 text-xs">Ethereum Dev Framework</p>
+                    </div>
+                    <div class="text-center p-2 bg-white/5 border border-white/10 rounded">
+                        <p class="text-white font-semibold text-xs">Viem</p>
+                        <p class="text-gray-400 text-xs">Web3 Client Library</p>
+                    </div>
+                    <div class="text-center p-2 bg-white/5 border border-white/10 rounded">
+                        <p class="text-white font-semibold text-xs">Hardhat Ignition</p>
+                        <p class="text-gray-400 text-xs">Deployment Framework</p>
+                    </div>
+                    <div class="text-center p-2 bg-white/5 border border-white/10 rounded">
+                        <p class="text-white font-semibold text-xs">Node.js</p>
+                        <p class="text-gray-400 text-xs">Backend Runtime</p>
+                    </div>
+                    <div class="text-center p-2 bg-white/5 border border-white/10 rounded">
+                        <p class="text-white font-semibold text-xs">PostgreSQL</p>
+                        <p class="text-gray-400 text-xs">Application Database</p>
+                    </div>
+                </div>
+
+                <h3 class="text-white font-semibold mb-2 text-lg">Test Results</h3>
+                <p class="text-gray-400 text-xs mb-2">Successfully recorded and verified multiple order statuses on the blockchain:</p>
+                <div class="bg-white/5 border border-white/10 rounded p-3 mb-6 font-mono text-xs text-gray-300 overflow-x-auto">
+                    <div>[OK] CREATED - Tx: 0x9535...</div>
+                    <div>[OK] READY_FOR_PICKUP - Tx: 0x4451...</div>
+                    <div>[OK] OUT_FOR_DELIVERY - Tx: 0x9850...</div>
+                    <div>[OK] DELIVERED - Tx: 0xa1a7...</div>
+                </div>
+
+                <div class="flex gap-4">
+                    <button onclick="openModal('project9-details-modal')" class="flex-1 bg-white text-black font-semibold py-3 rounded text-center hover:bg-gray-200 transition-colors text-sm">
+                        View Full Details
+                    </button>
+                    <a href="https://github.com/Azhar-Ali-ali/lumina-blockchain-order-verification" target="_blank" class="flex-1 bg-white text-black font-semibold py-3 rounded text-center hover:bg-gray-200 transition-colors text-sm">
+                        <i class="fab fa-github mr-2"></i> Source Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9 Details: Blockchain Project Full Details -->
+    <div id="project9-details-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 transition-opacity duration-300 p-4 overflow-y-auto">
+        <div class="bg-brand-dark border border-white/10 rounded-lg w-full max-w-4xl transform scale-95 transition-transform duration-300 my-8 flex flex-col max-h-[95vh]">
+            <div class="flex justify-between items-start p-6 sm:p-8 border-b border-white/10 flex-shrink-0">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-2">LUMINA — Blockchain Order Verification</h2>
+                    <p class="text-gray-400 text-sm">Blockchain Integration • Smart Contracts • Web3</p>
+                </div>
+                <button onclick="closeModal('project9-details-modal')" class="w-8 h-8 bg-black/50 hover:bg-black text-white rounded-full flex items-center justify-center transition-colors border border-white/20 flex-shrink-0">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="p-6 sm:p-8 overflow-y-auto custom-scrollbar flex-grow">
+                <!-- Project File Structure -->
+                <div class="bg-brand-gray border border-white/10 rounded p-4 mb-6 font-mono text-xs text-gray-300">
+                    <div class="text-white font-semibold mb-3">Project Structure: Final-Year-Project/blockchain/</div>
+                    <div>contracts/</div>
+                    <div class="ml-4">OrderVerification.sol (60 lines)</div>
+                    <div>scripts/</div>
+                    <div class="ml-4">testOrder.ts (52 lines)</div>
+                    <div>ignition/modules/</div>
+                    <div class="ml-4">OrderVerification.ts</div>
+                    <div>hardhat.config.ts</div>
+                    <div>package.json</div>
+                    <div>tsconfig.json</div>
+                </div>
+
+                <!-- Overview Section -->
+                <h3 class="text-xl font-semibold text-white mb-4">Overview</h3>
+                <p class="text-gray-400 mb-4 text-sm leading-relaxed">
+                    Extended LUMINA, my AI-powered multi-vendor e-commerce platform, with a blockchain-based order audit trail. The system uses a Solidity smart contract to record important order lifecycle events such as CREATED, READY_FOR_PICKUP, OUT_FOR_DELIVERY, and DELIVERED.
+                </p>
+                <p class="text-gray-400 mb-6 text-sm leading-relaxed">
+                    PostgreSQL remains the primary application database, while blockchain is used selectively to create a tamper-evident record of important order events. This hybrid architecture provides the flexibility of a traditional database with the security guarantees of blockchain.
+                </p>
+
+                <!-- What I Built Section -->
+                <h3 class="text-xl font-semibold text-white mb-4 border-t border-white/10 pt-6">What I Built</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                    <div class="bg-white/5 border border-white/10 rounded p-4">
+                        <p class="text-white font-semibold text-sm mb-2">Smart Contract</p>
+                        <p class="text-gray-400 text-xs">Developed OrderVerification Solidity contract to store order status history and timestamps on-chain.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-4">
+                        <p class="text-white font-semibold text-sm mb-2">Blockchain Network</p>
+                        <p class="text-gray-400 text-xs">Used Hardhat to run a local Ethereum-compatible blockchain for development and testing.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-4">
+                        <p class="text-white font-semibold text-sm mb-2">Contract Deployment</p>
+                        <p class="text-gray-400 text-xs">Used Hardhat Ignition for automated smart contract compilation, deployment, and verification.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-4">
+                        <p class="text-white font-semibold text-sm mb-2">Web3 Integration</p>
+                        <p class="text-gray-400 text-xs">Used Viem to interact with deployed smart contract from Node.js backend using contract ABI.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-4">
+                        <p class="text-white font-semibold text-sm mb-2">Order Audit Trail</p>
+                        <p class="text-gray-400 text-xs">Successfully recorded multiple order lifecycle events on-chain with transaction confirmation.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-4">
+                        <p class="text-white font-semibold text-sm mb-2">Hybrid Architecture</p>
+                        <p class="text-gray-400 text-xs">PostgreSQL handles application data while blockchain provides verification for critical events.</p>
+                    </div>
+                </div>
+
+                <!-- Architecture Diagram -->
+                <div class="bg-brand-gray border border-white/10 rounded p-4 mb-6 text-center text-gray-300 text-xs font-mono space-y-1 overflow-x-auto">
+                    <div class="text-white font-semibold mb-3">LUMINA Platform Architecture</div>
+                    <div>React Frontend</div>
+                    <div class="text-gray-500">|</div>
+                    <div>Node.js + Express Backend</div>
+                    <div class="text-gray-500">|</div>
+                    <div>PostgreSQL Database + Viem Library</div>
+                    <div class="text-gray-500">|</div>
+                    <div class="text-green-400">OrderVerification.sol Smart Contract</div>
+                    <div class="text-gray-500">|</div>
+                    <div class="text-blue-400">Hardhat Local Blockchain (Ethereum)</div>
+                </div>
+
+                <!-- System Architecture -->
+                <h3 class="text-xl font-semibold text-white mb-4 border-t border-white/10 pt-6">System Architecture</h3>
+                <div class="bg-white/5 border border-white/10 rounded p-4 mb-6 text-center text-gray-300 text-sm font-mono space-y-2">
+                    <p>LUMINA Frontend (React)</p>
+                    <p class="text-gray-500">↓</p>
+                    <p>Node.js Backend (Express)</p>
+                    <p class="text-gray-500">↓</p>
+                    <p>PostgreSQL (App DB) + Viem (Web3)</p>
+                    <p class="text-gray-500">↓</p>
+                    <p>OrderVerification.sol</p>
+                    <p class="text-gray-500">↓</p>
+                    <p class="text-white">Hardhat Blockchain (Ethereum-compatible)</p>
+                </div>
+
+                <!-- Smart Contract File Display -->
+                <div class="bg-brand-gray border border-white/10 rounded overflow-hidden mb-6">
+                    <div class="bg-black/50 px-4 py-2 border-b border-white/10 text-xs text-gray-400">
+                        <span class="text-green-400">contracts/</span>OrderVerification.sol
+                    </div>
+                    <div class="p-4 overflow-x-auto">
+                        <code class="text-gray-300 text-xs font-mono leading-relaxed block">
+<span class="text-purple-400">// SPDX-License-Identifier:</span> <span class="text-orange-400">MIT</span><br>
+<span class="text-purple-400">pragma solidity</span> <span class="text-blue-400">^0.8.20</span>;<br>
+<br>
+<span class="text-purple-400">contract</span> <span class="text-cyan-400">OrderVerification</span> {<br>
+&nbsp;&nbsp;<span class="text-purple-400">struct</span> <span class="text-cyan-400">OrderEvent</span> {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-blue-400">string</span> status;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-blue-400">uint256</span> timestamp;<br>
+&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;<span class="text-blue-400">mapping</span>(<span class="text-blue-400">string</span> =&gt; <span class="text-cyan-400">OrderEvent</span>[]) <span class="text-purple-400">private</span> orderHistory;<br>
+<br>
+&nbsp;&nbsp;<span class="text-purple-400">event</span> <span class="text-cyan-400">OrderStatusRecorded</span>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-blue-400">string</span> <span class="text-purple-400">indexed</span> orderId,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-blue-400">string</span> status,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-blue-400">uint256</span> timestamp<br>
+&nbsp;&nbsp;);<br>
+<br>
+&nbsp;&nbsp;<span class="text-purple-400">function</span> <span class="text-cyan-400">recordOrderStatus</span>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-blue-400">string</span> <span class="text-purple-400">memory</span> orderId,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-blue-400">string</span> <span class="text-purple-400">memory</span> status<br>
+&nbsp;&nbsp;) <span class="text-purple-400">public</span> {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;orderHistory[orderId].<span class="text-cyan-400">push</span>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-cyan-400">OrderEvent</span>({status: status, timestamp: <span class="text-purple-400">block</span>.timestamp})<br>
+&nbsp;&nbsp;&nbsp;&nbsp;);<br>
+&nbsp;&nbsp;}<br>
+}
+                        </code>
+                    </div>
+                </div>
+
+                <!-- Smart Contract Code -->
+                <h3 class="text-xl font-semibold text-white mb-4 border-t border-white/10 pt-6">Smart Contract Code</h3>
+                <div class="bg-brand-gray border border-white/10 rounded p-4 mb-6 overflow-x-auto">
+                    <code class="text-gray-300 text-xs font-mono leading-relaxed block">
+pragma solidity ^0.8.20;<br>
+<br>
+contract OrderVerification {<br>
+&nbsp;&nbsp;struct OrderEvent {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string status;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;uint256 timestamp;<br>
+&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;mapping(string => OrderEvent[]) private orderHistory;<br>
+<br>
+&nbsp;&nbsp;event OrderStatusRecorded(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string indexed orderId,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string status,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;uint256 timestamp<br>
+&nbsp;&nbsp;);<br>
+<br>
+&nbsp;&nbsp;function recordOrderStatus(string memory orderId, string memory status) public {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;orderHistory[orderId].push(OrderEvent({status: status, timestamp: block.timestamp}));<br>
+&nbsp;&nbsp;&nbsp;&nbsp;emit OrderStatusRecorded(orderId, status, block.timestamp);<br>
+&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;function getOrderHistory(string memory orderId) public view returns (OrderEvent[] memory) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return orderHistory[orderId];<br>
+&nbsp;&nbsp;}<br>
+}
+                    </code>
+                </div>
+
+                <!-- Deployment Terminal Output -->
+                <div class="bg-black border border-green-900/50 rounded overflow-hidden mb-6">
+                    <div class="bg-black/80 px-4 py-2 border-b border-green-900/50 text-xs text-green-400">
+                        $ npx hardhat ignition deploy ignition/modules/OrderVerification.ts --network localhost
+                    </div>
+                    <div class="p-4 font-mono text-xs text-green-400 space-y-1">
+                        <div>Hardhat Ignition 🚀</div>
+                        <div class="mt-2"></div>
+                        <div>&nbsp;&nbsp;Executed OrderVerificationModule#OrderVerification</div>
+                        <div class="mt-2">[ OrderVerificationModule ] successfully deployed 🚀</div>
+                        <div class="mt-2">Deployed Addresses</div>
+                        <div class="mt-1">OrderVerificationModule#OrderVerification</div>
+                        <div class="text-yellow-400">0x5FbDB2315678afecb367f032d93F642f64180aa3</div>
+                    </div>
+                </div>
+
+                <!-- Deployment Info -->
+                <h3 class="text-xl font-semibold text-white mb-4 border-t border-white/10 pt-6">Deployment Info</h3>
+                <div class="bg-brand-gray border border-white/10 rounded p-4 mb-6 font-mono text-xs text-gray-300 space-y-2">
+                    <div class="text-green-400">Contract Address:</div>
+                    <div class="text-yellow-400">0x5FbDB2315678afecb367f032d93F642f64180aa3</div>
+                    <div class="mt-3 text-green-400">Network:</div>
+                    <div>Hardhat Local Blockchain (Ethereum-Compatible)</div>
+                    <div class="mt-3 text-green-400">Deployment Tool:</div>
+                    <div>Hardhat Ignition v3.1.8</div>
+                    <div class="mt-3 text-green-400">Compiler Version:</div>
+                    <div>Solidity 0.8.28</div>
+                </div>
+
+                <!-- Test Results Terminal Output -->
+                <div class="bg-black border border-cyan-900/50 rounded overflow-hidden mb-6">
+                    <div class="bg-black/80 px-4 py-2 border-b border-cyan-900/50 text-xs text-cyan-400">
+                        $ npx hardhat run scripts/testOrder.ts --network localhost
+                    </div>
+                    <div class="p-4 font-mono text-xs text-cyan-400 space-y-0.5 overflow-x-auto">
+                        <div class="text-white">═════════════════════════════════════════════════════════</div>
+                        <div class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LUMINA — Blockchain Order Verification System</div>
+                        <div class="text-white">═════════════════════════════════════════════════════════</div>
+                        <div></div>
+                        <div>Recording order status...</div>
+                        <div class="text-green-400">[OK] Transaction successful</div>
+                        <div>Transaction hash: 0x9535066ca64a1236ec160d233da39766e9c90d78218236ff...</div>
+                        <div></div>
+                        <div>Recording additional statuses...</div>
+                        <div class="text-green-400">[OK] READY_FOR_PICKUP - 0x445129fbcfd6adeb25a113...</div>
+                        <div class="text-green-400">[OK] OUT_FOR_DELIVERY - 0x985015bf2802eefc364bfe...</div>
+                        <div class="text-green-400">[OK] DELIVERED - 0xa1a718edc429f2af5240a58c...</div>
+                        <div></div>
+                        <div>Retrieving order history...</div>
+                        <div class="text-white">═════════════════════════════════════════════════════════</div>
+                        <div class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ORDER VERIFICATION</div>
+                        <div class="text-white">═════════════════════════════════════════════════════════</div>
+                        <div></div>
+                        <div>Order ID: <span class="text-green-400">ORDER-1001</span></div>
+                        <div></div>
+                        <div>&nbsp;&nbsp;1. [OK] CREATED - Block: 1787041756</div>
+                        <div>&nbsp;&nbsp;2. [OK] READY_FOR_PICKUP - Block: 1787041757</div>
+                        <div>&nbsp;&nbsp;3. [OK] OUT_FOR_DELIVERY - Block: 1787041758</div>
+                        <div>&nbsp;&nbsp;4. [OK] DELIVERED - Block: 1787041759</div>
+                        <div></div>
+                        <div class="text-white">═════════════════════════════════════════════════════════</div>
+                        <div class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VERIFICATION COMPLETE</div>
+                        <div class="text-white">═════════════════════════════════════════════════════════</div>
+                    </div>
+                </div>
+
+                <!-- Test Results -->
+                <h3 class="text-xl font-semibold text-white mb-4 border-t border-white/10 pt-6">Verification Results</h3>
+                <p class="text-gray-400 text-sm mb-3">All order statuses successfully recorded and verified on the blockchain with transaction confirmation:</p>
+
+                <!-- How It Works -->
+                <h3 class="text-xl font-semibold text-white mb-4 border-t border-white/10 pt-6">How It Works</h3>
+                <div class="space-y-3 mb-6">
+                    <div class="flex gap-4">
+                        <span class="text-white font-bold flex-shrink-0">1</span>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Order Event</p>
+                            <p class="text-gray-400 text-xs">Important order status is generated by LUMINA application backend.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-white font-bold flex-shrink-0">2</span>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Backend Processing</p>
+                            <p class="text-gray-400 text-xs">Node.js/Express backend processes the order event.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-white font-bold flex-shrink-0">3</span>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Web3 Layer</p>
+                            <p class="text-gray-400 text-xs">Viem sends the event to the smart contract.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-white font-bold flex-shrink-0">4</span>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Smart Contract</p>
+                            <p class="text-gray-400 text-xs">The Solidity contract records the status and timestamp on-chain.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-white font-bold flex-shrink-0">5</span>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Verification</p>
+                            <p class="text-gray-400 text-xs">Order history can be retrieved from the blockchain for verification.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why Blockchain -->
+                <h3 class="text-xl font-semibold text-white mb-4 border-t border-white/10 pt-6">Why Blockchain</h3>
+                <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                    Traditional order information is stored in the application's database. For selected critical events, blockchain provides an additional tamper-evident record. This allows LUMINA to verify that a particular order status was recorded at a specific point in time without replacing the existing database architecture.
+                </p>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    The blockchain serves as a trust layer for important order lifecycle milestones, combining the flexibility of a traditional database with security guarantees of blockchain.
+                </p>
+
+                <!-- Package Configuration -->
+                <div class="bg-brand-gray border border-white/10 rounded overflow-hidden mb-6">
+                    <div class="bg-black/50 px-4 py-2 border-b border-white/10 text-xs text-gray-400">
+                        package.json - Dependencies & Scripts
+                    </div>
+                    <div class="p-4 font-mono text-xs text-gray-300 space-y-1">
+                        <div class="text-orange-400">"hardhat"</div>
+                        <div class="text-gray-500">- Ethereum development environment</div>
+                        <div class="mt-2 text-orange-400">"@nomicfoundation/hardhat-toolbox-viem"</div>
+                        <div class="text-gray-500">- Hardhat plugins for smart contract development</div>
+                        <div class="mt-2 text-orange-400">"@nomicfoundation/hardhat-ignition"</div>
+                        <div class="text-gray-500">- Smart contract deployment framework</div>
+                        <div class="mt-2 text-orange-400">"viem"</div>
+                        <div class="text-gray-500">- Web3 client library for blockchain interaction</div>
+                        <div class="mt-2 text-orange-400">"typescript"</div>
+                        <div class="text-gray-500">- Type-safe programming language</div>
+                        <div class="mt-3 text-green-400">Solidity ^0.8.20</div>
+                        <div class="text-gray-500">- Smart contract programming language</div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack -->
+                <h3 class="text-xl font-semibold text-white mb-4 border-t border-white/10 pt-6">Technology Stack</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-6">
+                    <div class="bg-white/5 border border-white/10 rounded p-2 text-center">
+                        <p class="text-white font-semibold text-xs">Solidity</p>
+                        <p class="text-gray-400 text-xs">Smart Contracts</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-2 text-center">
+                        <p class="text-white font-semibold text-xs">Hardhat</p>
+                        <p class="text-gray-400 text-xs">Dev Framework</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-2 text-center">
+                        <p class="text-white font-semibold text-xs">Hardhat Ignition</p>
+                        <p class="text-gray-400 text-xs">Deployment</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-2 text-center">
+                        <p class="text-white font-semibold text-xs">Viem</p>
+                        <p class="text-gray-400 text-xs">Web3 Library</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-2 text-center">
+                        <p class="text-white font-semibold text-xs">Node.js</p>
+                        <p class="text-gray-400 text-xs">Backend Runtime</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-2 text-center">
+                        <p class="text-white font-semibold text-xs">PostgreSQL</p>
+                        <p class="text-gray-400 text-xs">App Database</p>
+                    </div>
+                </div>
+
+                <!-- Key Features -->
+                <h3 class="text-xl font-semibold text-white mb-4 border-t border-white/10 pt-6">Key Features</h3>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex gap-3 text-sm">
+                        <span class="text-green-400 flex-shrink-0">+</span>
+                        <span class="text-gray-400">Immutable order history permanently recorded on blockchain</span>
+                    </li>
+                    <li class="flex gap-3 text-sm">
+                        <span class="text-green-400 flex-shrink-0">+</span>
+                        <span class="text-gray-400">Smart contract events for real-time monitoring</span>
+                    </li>
+                    <li class="flex gap-3 text-sm">
+                        <span class="text-green-400 flex-shrink-0">+</span>
+                        <span class="text-gray-400">On-chain timestamp verification for sequencing</span>
+                    </li>
+                    <li class="flex gap-3 text-sm">
+                        <span class="text-green-400 flex-shrink-0">+</span>
+                        <span class="text-gray-400">Type-safe Web3 integration with Viem</span>
+                    </li>
+                    <li class="flex gap-3 text-sm">
+                        <span class="text-green-400 flex-shrink-0">+</span>
+                        <span class="text-gray-400">Hybrid architecture combining databases and blockchain</span>
+                    </li>
+                    <li class="flex gap-3 text-sm">
+                        <span class="text-green-400 flex-shrink-0">+</span>
+                        <span class="text-gray-400">Local Ethereum-compatible development network</span>
+                    </li>
+                </ul>
+
+                <!-- Action Buttons -->
+                <div class="flex gap-4 border-t border-white/10 pt-6">
+                    <a href="https://github.com/Azhar-Ali-ali/lumina-blockchain-order-verification" target="_blank" class="flex-1 bg-white text-black font-semibold py-3 rounded text-center hover:bg-gray-200 transition-colors text-sm">
+                        View Source Code
+                    </a>
+                    <a href="https://luminaclothes.app/" target="_blank" class="flex-1 bg-white text-black font-semibold py-3 rounded text-center hover:bg-gray-200 transition-colors text-sm">
+                        View LUMINA Platform
                     </a>
                 </div>
             </div>
